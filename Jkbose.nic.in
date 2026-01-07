@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKBOSE - Class 10th Result 2024</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; padding-top: 50px; }
+        .box { background: white; width: 350px; margin: auto; padding: 20px; border: 1px solid #ccc; border-top: 5px solid #2c3e50; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        img { width: 80px; }
+        input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; }
+        button { background-color: #2c3e50; color: white; border: none; padding: 10px 20px; cursor: pointer; width: 100%; }
+        button:hover { background-color: #34495e; }
+        h2 { font-size: 18px; color: #333; }
+        #prank-message { display: none; font-size: 24px; color: red; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="box" id="main-box">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/39/JKBOSE_Logo.png" alt="JKBOSE Logo">
+    <h2>Search Result: Class 10th (Annual)</h2>
+    <p>Enter Roll Number:</p>
+    <input type="text" id="roll" placeholder="e.g. 12345678">
+    <button onclick="showPrank()">Submit</button>
+</div>
+
+<div id="prank-message">
+    <h1>Kesa Laga Mera Mazak? 😂</h1>
+    <p>Padhai kar lo, result abhi nahi aaya!</p>
+    <button onclick="location.reload()">Back</button>
+</div>
+
+<script>
+    function showPrank() {
+        const roll = document.getElementById('roll').value;
+        if(roll === "") {
+            alert("Please enter a roll number!");
+        } else {
+            document.getElementById('main-box').style.display = 'none';
+            document.getElementById('prank-message').style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
